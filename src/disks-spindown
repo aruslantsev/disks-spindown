@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright (c) 2021-2024 Andrei Ruslantsev
+# Copyright (c) 2021-2025 Andrei Ruslantsev
 
 # This program is free software: you can redistribute it and/or modify it under the terms
 # of the GNU General Public License as published by the Free Software Foundation, either
@@ -85,8 +85,8 @@ function main() {
 
 
 if [ "$#" != 1 ]; then
-  logger -t disks-spindown -p daemon.info No config file passed. Using /etc/disks-spindown.conf
-  config_file=/etc/disks-spindown.conf
+  logger -t disks-spindown -p daemon.info No config file passed. Using /etc/conf.d/disks-spindown
+  config_file=/etc/conf.d/disks-spindown
 else
   config_file="${1}"
 fi

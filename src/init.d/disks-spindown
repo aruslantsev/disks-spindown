@@ -3,8 +3,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 supervisor="supervise-daemon"
-command="/usr/bin/disks-spindown"
-command_args="${DAEMON_ARGS}"
+command="/usr/bin/disks-spindown /etc/conf.d/disks-spindown"
 description="Daemon for Advanced Configuration and Power Interface"
 
 depend() {

@@ -1,3 +1,0 @@
-disks="sda sdb sdc sdd"
-timeout=3600
-polling_interval=60

@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+# Copyright 2025 Andrei Ruslantsev
+# Distributed under the terms of the GNU General Public License v2
+
+supervisor="supervise-daemon"
+command="/usr/bin/disks-spindown /etc/conf.d/disks-spindown"
+
+depend() {
+	use logger
+}

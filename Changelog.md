@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.1 - 2025-05-25
+- Fix logging
+
 ## 1.0 - 2025-05-25
 - Change default settings
 - Reduce number of messages in logs

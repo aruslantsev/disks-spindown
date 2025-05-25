@@ -64,7 +64,7 @@ function main() {
       else
         # If nothing changed, count time from last activity and compare to timeout
         timediff=$(($current_scan-modification_time["${disk}"]))
-        logger -p daemon.debug ${disk} is inactive for ${timediff} seconds
+        # logger -p daemon.debug ${disk} is inactive for ${timediff} seconds
         if [ $timediff -ge $timeout ]; then
           # time difference if greater than timeout. Check if disk is already sleeping
           status=$(smartctl -n standby /dev/${disk} >> /dev/null; echo $?)

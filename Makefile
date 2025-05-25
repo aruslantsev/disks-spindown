@@ -1,9 +1,12 @@
 all: rpm deb
 
-rpm:
-	rpmbuild -ba --build-in-place disks-spindown.spec
 
-version != grep --color=never Version control | cut -d\  -f2
+VERSION != cat Version
+
+rpm:
+	cat build/disks-spindown.spec.template | sed -e "s/{{ VERSION }}/${VERSION}/g" > build/disks-spindown.spec
+	rpmbuild -ba --build-in-place build/disks-spindown.spec
+
 deb:
 	rm -r disks-spindown_$(version)-1_all || echo Previous build does not exist
 	mkdir disks-spindown_$(version)-1_all

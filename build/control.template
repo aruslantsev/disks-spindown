@@ -1,5 +1,5 @@
 Package: disks-spindown
-Version: ${VERSION}
+Version: {{ VERSION }}
 Architecture: all
 Depends: hdparm, smartmontools, bash
 Maintainer: Andrei Ruslantsev <test@example.com>

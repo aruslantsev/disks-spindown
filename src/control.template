@@ -1,7 +1,7 @@
 Package: disks-spindown
-Version: 0.9
+Version: ${VERSION}
 Architecture: all
-Depends: hdparm, smartmontools
+Depends: hdparm, smartmontools, bash
 Maintainer: Andrei Ruslantsev <test@example.com>
 Description: Spins down inactive disks after timeout.
  Spins down inactive disks after timeout.

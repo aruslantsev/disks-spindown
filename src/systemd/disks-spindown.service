@@ -4,6 +4,6 @@ Description=disks-poweroff service
 Type=simple
 ExecStart=/usr/bin/disks-spindown /etc/disks-spindown.conf
 Restart=always
-RestartSec=2s
+RestartSec=10s
 [Install]
 WantedBy=multi-user.target

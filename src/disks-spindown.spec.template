@@ -1,12 +1,13 @@
 Name:       disks-spindown
-Version:    0.9
+Version:    ${VERSION}
 Release:    1%{?dist}
-Summary:    Stop inactive disks
+Summary:    Stop inactive disks after timeout
 License:    GPLv3+
 BuildArch:  noarch
 
 Requires:   smartmontools
 Requires:   hdparm
+Requires:   bash
 
 %define _unitdir /usr/lib/systemd/system
 
@@ -24,6 +25,11 @@ install -D -m 755 disks-spindown %{buildroot}%{_bindir}/disks-spindown
 %config %{_sysconfdir}/disks-spindown.conf
 
 %changelog
+* Sun May 25 2025 Andrei Ruslantsev - 1.0
+- Change default settings
+- Reduce number of messages in logs
+- Use templates in build scripts
+
 * Sat Feb 1 2025 Andrei Ruslantsev - 0.9
 - Build rpm and deb for release
 

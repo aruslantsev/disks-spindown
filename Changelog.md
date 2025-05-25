@@ -1,35 +1,35 @@
-# Changelog
+# Change Log
 
-* Sun May 25 2025 Andrei Ruslantsev - 1.0
+## 1.0 - 2025-05-25
 - Change default settings
 - Reduce number of messages in logs
 - Use templates in build scripts
 
-* Sat Feb 1 2025 Andrei Ruslantsev - 0.9
+## 0.9 - 2025-02-01
 - Build rpm and deb for release
 
-* Thu Jan 30 2025 Andrei Ruslantsev - 0.8
+## 0.8 - 2025-01-30
 - Provide support for openrc
 
-* Mon Nov 11 2024 Andrei Ruslantsev - 0.7
-- Using bash
+## 0.7- 2024-11-11
+- Switch to bash
 - Simplify code
 
-* Tue Aug 15 2023 Andrei Ruslantsev - 0.6
+## 0.6 - 2023-08-15
 - Refactor code
 - Switch to c++
 
-* Sun Jul 30 2023 Andrei Ruslantsev - 0.5
+## 0.5 - 2023-07-30
 - Refactor code
 
-* Wed Mar 16 2022 Andrei Ruslantsev - 0.4
+## 0.4 - 2022-03-16
 - Fix typos
 
-* Fri Mar 11 2022 Andrei Ruslantsev - 0.3
+## 0.3 - 2022-03-11
 - Add dependencies to RPM
 
-* Thu Mar 10 2022 Andrei Ruslantsev - 0.2
+## 0.2 - 2022-03-10
 - Use system logger
 
-* Thu Mar 10 2022 Andrei Ruslantsev - 0.1
+## 0.1 - 2022-03-10
 - Initial release

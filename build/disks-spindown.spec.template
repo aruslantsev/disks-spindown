@@ -1,0 +1,25 @@
+Name:       disks-spindown
+Version:    {{ VERSION }}
+Release:    1%{?dist}
+Summary:    Stop inactive disks after timeout
+License:    GPLv3+
+BuildArch:  noarch
+
+Requires:   smartmontools
+Requires:   hdparm
+Requires:   bash
+
+%define _unitdir /usr/lib/systemd/system
+
+%description
+Spins down inactive disks after timeout
+
+%install
+install -D -m 644 src/systemd/disks-spindown.service %{buildroot}%{_unitdir}/disks-spindown.service
+install -D -m 644 src/conf.d/disks-spindown %{buildroot}%{_sysconfdir}/disks-spindown.conf
+install -D -m 755 src/disks-spindown %{buildroot}%{_bindir}/disks-spindown
+
+%files
+%{_unitdir}/disks-spindown.service
+%{_bindir}/disks-spindown
+%config %{_sysconfdir}/disks-spindown.conf

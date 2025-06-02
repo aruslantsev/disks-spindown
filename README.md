@@ -1,6 +1,8 @@
 # disks-spindown
 
-Tool for spinning down HDDs if power management via hdparm does not work. 
-This tool checks if any amount of data have been read or written to disk 
-and executes ```hdparm -yY $device``` for the selected devices after the 
-timeout.
+Script to spin down HDDs after a period of inactivity. 
+
+This can be useful if the drives are used quite rarely and APM via hdparm does not work. 
+This script monitors disk activity and executes ```hdparm -yY $device``` to stop 
+selected drives 
+
